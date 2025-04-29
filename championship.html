@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Championship History | WWE Championships</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="/public/images/wwe_logo.svg" />
+    <meta name="description" content="View the complete history of this prestigious WWE Championship." />
+  </head>
+  <body>
+    <div id="app">
+      <header class="wwe-header">
+        <div class="header-container">
+          <div class="logo-container">
+            <a href="/" class="wwe-logo">
+              <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="/">All Superstars</a></li>
+              <li><a href="/championships.html" class="active">Championships</a></li>
+            </ul>
+          </nav>
+          <div class="search-container">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Search Championships..." />
+              <button type="submit" id="search-button">
+                <img src="/public/images/search-icon.svg" alt="Search" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="championship-profile">
+          <div class="profile-container">
+            <div class="profile-header">
+              <div class="championship-image">
+                <!-- Championship image will be loaded by JavaScript -->
+              </div>
+              <div class="profile-title">
+                <h1 id="championship-name"><!-- Championship name will be loaded by JavaScript --></h1>
+                <p id="current-holder">
+                  Current Holder: <span id="holder-name"><!-- Current holder will be loaded by JavaScript --></span>
+                  <span id="days-held"><!-- Days held will be loaded by JavaScript --></span> days
+                </p>
+              </div>
+            </div>
+
+            <div class="profile-content">
+              <div class="championship-description">
+                <h2>About This Championship</h2>
+                <div id="championship-description">
+                  <!-- Championship description will be loaded by JavaScript -->
+                </div>
+              </div>
+
+              <div class="championship-history">
+                <h2>Championship History</h2>
+                <div class="history-timeline">
+                  <!-- Will be filled by JavaScript -->
+                </div>
+              </div>
+
+              <div class="championship-stats">
+                <h2>Championship Statistics</h2>
+                <div class="stats-grid">
+                  <div class="stat-box">
+                    <span class="stat-label">Established</span>
+                    <span class="stat-value" id="stat-established"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Longest Reign</span>
+                    <span class="stat-value" id="stat-longest-reign"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Shortest Reign</span>
+                    <span class="stat-value" id="stat-shortest-reign"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Most Reigns</span>
+                    <span class="stat-value" id="stat-most-reigns"><!-- Will be filled by JS --></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="wwe-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+          </div>
+          <div class="footer-nav">
+            <h3>WWE.com</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/championships.html">Championships</a></li>
+              <li><a href="/superstars.html">Superstars</a></li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2025 WWE All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/data.js"></script>
+    <script src="/public/js/championship.js"></script>
+  </body>
+</html>

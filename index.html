@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WWE Superstars | The Official Destination for WWE Superstars</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="/public/images/wwe_logo.svg" />
+    <meta name="description" content="Come to the home of WWE Superstars - see their career highlights, videos, news, photos and much more!" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="wwe-header">
+        <div class="header-container">
+          <div class="logo-container">
+            <a href="/" class="wwe-logo">
+              <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="/" class="active">All Superstars</a></li>
+              <li><a href="/championships.html">Championships</a></li>
+            </ul>
+          </nav>
+          <div class="search-container">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Search Superstars..." />
+              <button type="submit" id="search-button">
+                <img src="/public/images/search-icon.svg" alt="Search" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-section">
+          <div class="hero-container">
+            <h1>WWE SUPERSTARS</h1>
+          </div>
+        </section>
+
+        <section class="champions-section">
+          <div class="section-container">
+            <h2>WWE: Champions</h2>
+            <div class="champions-grid">
+              <!-- Champions will be loaded here by JavaScript -->
+            </div>
+          </div>
+        </section>
+
+        <section class="superstars-section">
+          <div class="section-container">
+            <h2>WWE: Current Superstars</h2>
+            <div class="filter-container">
+              <button class="filter-button active" data-filter="all">All Superstars</button>
+            </div>
+            <div class="superstars-grid">
+              <!-- Superstars will be loaded here by JavaScript -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="wwe-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+          </div>
+          <div class="footer-nav">
+            <h3>WWE.com</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/championships.html">Championships</a></li>
+              <li><a href="/superstars.html">Superstars</a></li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2025 WWE All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/data.js"></script>
+    <script src="/public/js/main.js"></script>
+  </body>
+</html>

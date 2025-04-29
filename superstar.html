@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Superstar Profile | WWE Superstars</title>
+    <link rel="stylesheet" href="/public/css/styles.css" />
+    <link rel="stylesheet" href="/public/css/responsive.css" />
+    <link rel="icon" type="image/svg+xml" href="/public/images/wwe_logo.svg" />
+    <meta name="description" content="View the profile, statistics, and details of your favorite WWE Superstar." />
+  </head>
+  <body>
+    <div id="app">
+      <header class="wwe-header">
+        <div class="header-container">
+          <div class="logo-container">
+            <a href="/" class="wwe-logo">
+              <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+            </a>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="/">All Superstars</a></li>
+              <li><a href="/championships.html">Championships</a></li>
+            </ul>
+          </nav>
+          <div class="search-container">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Search Superstars..." />
+              <button type="submit" id="search-button">
+                <img src="/public/images/search-icon.svg" alt="Search" />
+              </button>
+            </form>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="superstar-profile">
+          <div class="profile-container">
+            <div class="profile-header">
+              <div class="profile-image">
+                <!-- Superstar image will be loaded by JavaScript -->
+              </div>
+              <div class="profile-title">
+                <h1 id="superstar-name"><!-- Superstar name will be loaded by JavaScript --></h1>
+                <p id="superstar-nickname"><!-- Superstar nickname will be loaded by JavaScript --></p>
+              </div>
+            </div>
+
+            <div class="profile-content">
+              <div class="profile-bio">
+                <h2>Biography</h2>
+                <div id="superstar-bio">
+                  <!-- Superstar bio will be loaded by JavaScript -->
+                </div>
+              </div>
+
+              <div class="profile-stats">
+                <h2>Statistics</h2>
+                <div class="stats-grid">
+                  <div class="stat-box">
+                    <span class="stat-label">Height</span>
+                    <span class="stat-value" id="stat-height"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Weight</span>
+                    <span class="stat-value" id="stat-weight"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Hometown</span>
+                    <span class="stat-value" id="stat-hometown"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Signature Move</span>
+                    <span class="stat-value" id="stat-signature"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">Career Highlights</span>
+                    <span class="stat-value" id="stat-highlights"><!-- Will be filled by JS --></span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-label">WWE Debut</span>
+                    <span class="stat-value" id="stat-debut"><!-- Will be filled by JS --></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-championships">
+                <h2>Current Championships</h2>
+                <div id="superstar-championships">
+                  <!-- Championships will be loaded by JavaScript -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="wwe-footer">
+        <div class="footer-container">
+          <div class="footer-logo">
+            <img src="/public/images/wwe_logo.svg" alt="WWE Logo" />
+          </div>
+          <div class="footer-nav">
+            <h3>WWE.com</h3>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/championships.html">Championships</a></li>
+              <li><a href="/superstars.html">Superstars</a></li>
+            </ul>
+          </div>
+          <div class="footer-copyright">
+            <p>&copy; 2025 WWE All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="/public/js/data.js"></script>
+    <script src="/public/js/superstar.js"></script>
+  </body>
+</html>

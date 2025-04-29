@@ -1,0 +1,166 @@
+/* Responsive Styles */
+
+/* Large Screens */
+@media (max-width: 1200px) {
+  .header-container,
+  .footer-container,
+  .section-container,
+  .hero-container,
+  .profile-container {
+    padding: 0 30px;
+  }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+  .champions-grid,
+  .superstars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+
+  .championships-grid {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+
+  .profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-image, .championship-image {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+  }
+
+  .wwe-header {
+    height: auto;
+    position: relative;
+  }
+
+  .logo-container {
+    order: 1;
+    flex: 1;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .main-nav ul {
+    justify-content: center;
+  }
+
+  .main-nav li:first-child {
+    margin-left: 0;
+  }
+
+  .search-container {
+    order: 2;
+  }
+
+  .hero-section {
+    height: 200px;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .champion-image, .superstar-image {
+    height: 220px;
+  }
+
+  section {
+    padding: 40px 0;
+  }
+
+  .champions-grid,
+  .superstars-grid,
+  .championships-grid {
+    gap: 15px;
+  }
+
+  .profile-title h1 {
+    font-size: 32px;
+  }
+
+  .profile-content {
+    gap: 30px;
+  }
+
+  .profile-bio,
+  .championship-description,
+  .profile-stats,
+  .championship-stats,
+  .profile-championships,
+  .championship-history {
+    padding: 20px;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+  .champions-grid,
+  .superstars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .championships-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .champion-image, .superstar-image {
+    height: 200px;
+  }
+
+  .profile-image, .championship-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .filter-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  #search-input {
+    width: 150px;
+  }
+}
